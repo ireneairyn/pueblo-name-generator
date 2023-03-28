@@ -45,6 +45,7 @@ button {
   border-radius: 30px;
   color: white;
   font-weight: bold;
+  cursor: pointer;
 }
 
 #response {
@@ -52,15 +53,30 @@ button {
   font-weight: bold;
   text-transform: uppercase;
   background-color: white;
-  border: solid 4px red;
+  border: solid 6px red;
   border-radius: 8px;
   padding: 8px;
-  font-size: 24px;
+  font-size: 30px;
+  max-width: 350px;
+  min-width: 250px;
 }
 
 .border {
-  border: solid 2px white;
+  border: solid 3px white;
   border-radius: 10px;
+}
+
+.posts {
+  display: flex;
+  justify-content: center;
+}
+
+.vertical-line {
+  border-left: 10px solid rgb(60, 60, 60);
+  border-right: 2px solid rgb(93, 93, 93);
+  height: 100px;
+  margin-right: 90px;
+  margin-left: 90px;
 }
 
 .sign {
@@ -68,21 +84,35 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 24px;
+  margin: 24px 24px 0 24px;
   text-align: center;
-  margin-bottom: 62px;
 }
 
 /* Desktop stuff */
 @media (min-width: 768px) {
   .background {
     background-position-y: 50%;
-    background-size: 80%;
   }
-  .sign {
-    margin-bottom: 100px;
-  }
+
   #response {
     font-size: 36px;
+    max-width: 350px;
+    min-width: 250px;
+  }
+
+  button {
+    font-size: 20px;
+  }
+  button:hover {
+    background-color: red; /* Green */
+    color: white;
+    border: red solid 10px;
+  }
+  .vertical-line {
+    border-left: 16px solid rgb(60, 60, 60);
+    border-right: 4px solid rgb(93, 93, 93);
+    height: 160px;
+    margin-right: 90px;
+    margin-left: 90px;
   }
 }
