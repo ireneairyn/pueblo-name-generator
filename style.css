@@ -15,7 +15,7 @@ body {
   right: 0;
   bottom: 0;
   z-index: -1;
-  background-image: url("../assets/spanishpueblo.png");
+  background-image: url("./assets/spanishpueblo.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -29,7 +29,7 @@ body {
   right: 0;
   bottom: 0;
   z-index: -1;
-  background-image: url("../assets/title.png");
+  background-image: url("./assets/title.png");
   background-size: 430px;
   background-repeat: no-repeat;
   background-position: center;
