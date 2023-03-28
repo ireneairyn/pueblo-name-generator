@@ -1,5 +1,5 @@
 function generatePuebloName() {
-  return "Villa del Valle";
+  return "Villacamellos de arriba";
 }
 
 window.addEventListener("DOMContentLoaded", (event) => {

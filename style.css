@@ -1,30 +1,87 @@
 body {
-    background-color: rgb(33, 84, 128);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  body,
-  button {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 16px;
-  }
-  
-  
-  h1 {
-    font-family: "Arvo", serif;
-    letter-spacing: -2px;
-    font-weight: bold;
-  }
+  margin: 0;
+  height: 100%;
+  background-color: rgb(33, 84, 128);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
 
-  #response {
-    color: black;
-    font-weight: bold;
-    text-transform: uppercase;
-    background-color: white;
-    border: solid 4px red;
-    border-radius: 8px;
-    padding: 8px;
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url("../assets/spanishpueblo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: bottom;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url("../assets/title.png");
+  background-size: 430px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: top;
+  margin-top: 20px;
+}
+
+button {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  background-color: #0097b2;
+  border: #0097b2 solid 10px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+#response {
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: white;
+  border: solid 4px red;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 24px;
+}
+
+.border {
+  border: solid 2px white;
+  border-radius: 10px;
+}
+
+.sign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 24px;
+  text-align: center;
+  margin-bottom: 62px;
+}
+
+/* Desktop stuff */
+@media (min-width: 768px) {
+  .background {
+    background-position-y: 80%;
   }
+  .sign {
+    margin-bottom: 100px;
+  }
+  #response {
+    font-size: 36px;
+  }
+}
