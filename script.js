@@ -30,7 +30,6 @@ function generatePuebloName() {
     "Nuevo ",
     "Viejo ",
     "Gran ",
-    "Brisa",
     "Calores ",
     "Nueva ",
     "Pueblo ",
@@ -86,24 +85,23 @@ function generatePuebloName() {
     "Zapato",
     "Zoquete",
     "Pimpollo",
-    "Pezones", 
+    "Pezones",
     "Mollete",
     "Palomino",
     "Patones",
     "Brazones",
     "Talones",
     "Secta",
-    "Saborío", 
-    "Sobaco", 
+    "Saborío",
+    "Sobaco",
     "Cañas",
-    "Lechuga", 
-    "Alcachofa", 
+    "Lechuga",
+    "Alcachofa",
     "Chulo",
     "Tuba",
     "Gatos",
     "Mazapanes",
     "Polvorón",
-
   ];
   const suffix = [
     "",
@@ -154,9 +152,14 @@ function generatePuebloName() {
     " del no cabo",
     " del campillo",
   ];
-  const randomPrefix = prefix[Math.floor(Math.random() * prefix.length)];
-  const randomNoun = nouns[Math.floor(Math.random() * nouns.length)];
-  const randomSuffix = suffix[Math.floor(Math.random() * suffix.length)];
+  let randomPrefix, randomNoun, randomSuffix;
+
+  do {
+    randomPrefix = prefix[Math.floor(Math.random() * prefix.length)];
+    randomNoun = nouns[Math.floor(Math.random() * nouns.length)];
+    randomSuffix = suffix[Math.floor(Math.random() * suffix.length)];
+  } while (randomPrefix === "" && randomNoun === "" && randomSuffix === "");
+
   return `${randomPrefix}${randomNoun}${randomSuffix}`;
 }
 
