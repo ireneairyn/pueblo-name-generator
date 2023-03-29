@@ -45,11 +45,8 @@ button {
   font-weight: bold;
   cursor: pointer;
   padding: 10px;
-}
-
-.border-button {
-  border: #005665 solid 6px;
-  border-radius: 30px;
+  outline: 6px solid #006c7f;
+  outline-offset: 0px;
 }
 
 .pueblo-button {
@@ -126,13 +123,11 @@ button {
   button {
     font-size: 20px;
   }
+
   button:hover {
-    background-color: red; /* Green */
-    color: white;
-    border: red solid 8px;
-  }
-  .border-button:hover {
-    border: transparent;
+    background-color: red;
+    border: red solid 2px;
+    outline: 6px solid white;
   }
 
   .vertical-line {
