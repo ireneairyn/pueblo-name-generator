@@ -65,6 +65,8 @@ button {
   font-family: "Josefin Sans", sans-serif;
   color: black;
   font-weight: bold;
+  text-align: center;
+  text-justify: inter-word;
   text-transform: uppercase;
   background-color: white;
   border: solid 6px red;
@@ -117,7 +119,7 @@ button {
 
   #response {
     font-size: 36px;
-    max-width: 350px;
+    max-width: 400px;
     min-width: 250px;
   }
 
@@ -130,7 +132,7 @@ button {
     border: red solid 8px;
   }
   .border-button:hover {
-    border: none;
+    border: transparent;
   }
 
   .vertical-line {
