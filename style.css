@@ -2,10 +2,8 @@ body {
   margin: 0;
   height: 100%;
   background-color: #0097b2;
-  display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: column;
 }
 
 .background {
@@ -40,15 +38,31 @@ body {
 button {
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
-  background-color: #0097b2;
-  border: #0097b2 solid 10px;
+  background-color: #3e9dcd;
+  border: white solid 2px;
   border-radius: 30px;
   color: white;
   font-weight: bold;
   cursor: pointer;
+  padding: 10px;
+}
+
+.border-button {
+  border: #005665 solid 6px;
+  border-radius: 30px;
+}
+
+.pueblo-button {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 290;
+  left: 0;
+  right: 0;
 }
 
 #response {
+  font-family: "Josefin Sans", sans-serif;
   color: black;
   font-weight: bold;
   text-transform: uppercase;
@@ -88,6 +102,13 @@ button {
   text-align: center;
 }
 
+.pueblo-sign {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 /* Desktop stuff */
 @media (min-width: 768px) {
   .background {
@@ -106,8 +127,12 @@ button {
   button:hover {
     background-color: red; /* Green */
     color: white;
-    border: red solid 10px;
+    border: red solid 8px;
   }
+  .border-button:hover {
+    border: none;
+  }
+
   .vertical-line {
     border-left: 16px solid rgb(60, 60, 60);
     border-right: 4px solid rgb(93, 93, 93);

@@ -20,7 +20,7 @@ function generatePuebloName() {
     "El ",
     "La ",
     "Torre",
-    "Sierra",
+    "Sierra ",
     "Real ",
     "San ",
     "Santa ",
@@ -95,7 +95,15 @@ function generatePuebloName() {
     "Secta",
     "Saborío", 
     "Sobaco", 
-    "Cañas", 
+    "Cañas",
+    "Lechuga", 
+    "Alcachofa", 
+    "Chulo",
+    "Tuba",
+    "Gatos",
+    "Mazapanes",
+    "Polvorón",
+
   ];
   const suffix = [
     "",
@@ -120,7 +128,6 @@ function generatePuebloName() {
     " de la Fuente",
     " de la charca",
     " de los calores",
-    " de los gatos",
     " del Sur",
     " del Norte",
     " del Este",
@@ -144,6 +151,8 @@ function generatePuebloName() {
     " de la siesta",
     " del los bollos",
     " de la amargura",
+    " del no cabo",
+    " del campillo",
   ];
   const randomPrefix = prefix[Math.floor(Math.random() * prefix.length)];
   const randomNoun = nouns[Math.floor(Math.random() * nouns.length)];
