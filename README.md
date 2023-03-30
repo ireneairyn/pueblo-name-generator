@@ -1,4 +1,4 @@
-# pueblo-name-generator 🏠️
+# 🇪🇸 pueblo-name-generator 🏠️
 
 Silly project to generate Spanish pueblo names!
 
