@@ -9,6 +9,7 @@ Silly project to generate Spanish pueblo names!
 ## Built With 🛠️
 
 * [Visual Studio Code](https://code.visualstudio.com/) - Code Editor
+* Artwork created with [Midjourney](https://www.midjourney.com/) 
 
 ## Author ✒️
 
